@@ -4,6 +4,24 @@
 
 ---
 
+### 📺 Demo & Anteprima
+
+Ecco una breve dimostrazione video del funzionamento del gestionale (creazione appuntamenti e interazione asincrona):
+
+https://github.com/TonyCZen/MedAg/blob/main/images/demo.mp4
+
+#### Schermate dell'applicazione:
+
+| Pagina di Acceso (Login) | Dashboard / Agenda |
+|--- |--- |
+| ![Login](images/login.png) | ![Dashboard](images/dashboard.png) |
+
+| Lista Appuntamenti | Modulo Nuovo Appuntamento |
+|--- |--- |
+| ![Lista Appuntamenti](images/listaappuntamenti.png) | ![Nuovo Appuntamento](images/nuovoappuntamento.png) |
+
+---
+
 ### 🚀 Funzionalità Principali
 
 *   **Sistema di Autenticazione Completo:** Registrazione, login e recupero password nativi, completi di verifica dell'indirizzo email per garantire l'accesso ai soli utenti autorizzati.
