@@ -1,59 +1,50 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🗓️ MedAg — Gestionale Agenda Medica Full-Stack
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**MedAg** è una web app full-stack sviluppata per ottimizzare e semplificare la gestione degli appuntamenti all'interno di uno studio medico o di professionisti sanitari. Il progetto è stato ideato e implementato per rispondere a esigenze reali di organizzazione, sicurezza dei dati e fluidità nell'esperienza utente.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### 🚀 Funzionalità Principali
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+*   **Sistema di Autenticazione Completo:** Registrazione, login e recupero password nativi, completi di verifica dell'indirizzo email per garantire l'accesso ai soli utenti autorizzati.
+*   **Gestione Appuntamenti (CRUD asincrono):** Possibilità di creare, visualizzare, modificare e cancellare gli appuntamenti in tempo reale senza dover ricaricare l'intera pagina del browser.
+*   **Validazione Avanzata dei Dati:** Controllo rigoroso dei dati inseriti nei moduli (date, orari, formati testo) prima del salvataggio nel database.
+*   **Sicurezza e Permessi:** Controllo degli accessi strutturato per fare in modo che ogni utente registrato possa visualizzare e modificare esclusivamente la propria agenda personale.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+### 🛠️ Tecnologie & Architettura
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+Il progetto adotta un'architettura robusta e moderna, sfruttando i seguenti strumenti:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+*   **Backend:** PHP con il framework **Laravel**, sfruttando le logiche MVC (Model-View-Controller) per una netta separazione dei ruoli all'interno del codice.
+*   **Frontend & Interattività:** Layout responsive basati sulle viste **Blade** di Laravel, arricchiti da logiche asincrone tramite **Fetch API (AJAX)** per una navigazione fluida e dinamica.
+*   **Database:** **MySQL**, gestito in modo sicuro tramite le **Migrations** per il controllo della struttura dei dati ed **Eloquent ORM** per le query.
+*   **Ambiente di Sviluppo Locale:** Laragon e server Apache su ambiente Windows.
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 🔒 Dettagli Tecnici Rilevanti
 
-### Premium Partners
+Per dimostrare un approccio professionale allo sviluppo, nel codice sono stati implementati:
+1.  **Laravel Policies:** Utilizzate per associare in sicurezza ogni record degli appuntamenti all'ID dell'utente proprietario, impedendo qualsiasi tentativo di accesso non autorizzato tramite URL.
+2.  **Form Requests dedicate:** Spostamento della logica di validazione dai Controller a classi di richiesta specifiche, mantenendo il codice pulito, leggibile e facilmente mantenibile (principio di singola responsabilità).
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+---
 
-## Contributing
+### 📦 Come Avviare il Progetto Localmente
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+*(Nota per i recruiter: il progetto richiede un ambiente PHP/MySQL locale come Laragon o XAMPP).*
 
-## Code of Conduct
+1. Clonare il repository sul proprio computer:
+   ```bash
+   git clone [https://github.com/TonyCZen/MedAg.git](https://github.com/TonyCZen/MedAg.git)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+## ⚖️ Licenza e Proprietà Intellettuale
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Ogni diritto sul codice, sul database e sulla logica applicativa di questo progetto è riservato a **Tony** (TonyCZen). 
+Il software è pubblicato su GitHub esclusivamente a scopo di **portfolio didattico** per dimostrare le mie competenze tecniche ai fini di selezione professionale.
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+**Non è concessa alcuna autorizzazione** a copiare, duplicare, modificare, distribuire o utilizzare questo codice per scopi commerciali, progetti personali derivati o pubblicazioni a proprio nome senza l'esplicito consenso scritto dell'autore.
