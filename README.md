@@ -8,17 +8,17 @@
 
 Ecco una breve dimostrazione video del funzionamento del gestionale (creazione appuntamenti e interazione asincrona):
 
-https://github.com/TonyCZen/MedAg/blob/main/images/demo.mp4
+<video src="images/demo.mp4" controls width="100%"></video>
 
 #### Schermate dell'applicazione:
 
-| Pagina di Acceso (Login) | Dashboard / Agenda |
+| Pagina di Accesso (Login) | Dashboard / Agenda |
 |--- |--- |
 | ![Login](images/login.png) | ![Dashboard](images/dashboard.png) |
 
 | Lista Appuntamenti | Modulo Nuovo Appuntamento |
 |--- |--- |
-| ![Lista Appuntamenti](images/listaappuntamenti.png) | ![Nuovo Appuntamento](images/nuovoappuntamento.png) |
+| ![Lista Appuntamenti](images/lista_appuntamenti.png) | ![Nuovo Appuntamento](images/nuovo_appuntamento.png) |
 
 ---
 
