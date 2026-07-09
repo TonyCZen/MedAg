@@ -1,0 +1,339 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --medical-blue: #0284c7;
+    --medical-blue-dark: #0369a1;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+.welcome-screen {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.app-logo {
+    color: var(--medical-blue);
+}
+
+.app-name {
+    color: red !important;
+}
+
+/* La "Finestrella" di presentazione App */
+.login-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+/* Icona Applicazione */
+.app-logo {
+    font-size: 3rem;
+    color: #0284c7; /* Medical Blue */
+    margin-bottom: 1rem;
+}
+
+.app-name {
+    font-weight: 700;
+    color: #334155;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.5px;
+}
+
+/* Titoli e Testi */
+.main-title {
+    color: #0f172a;
+    font-weight: 800;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.description {
+    color: #64748b;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+/* Pulsanti */
+.btn-register {
+    background-color: #0284c7;
+    color: white;
+    padding: 12px 0;
+    border-radius: 10px;
+    font-weight: 600;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: background 0.2s;
+    border: none;
+}
+
+.btn-register:hover {
+    background-color: #0369a1;
+    color: white;
+}
+
+.btn-login {
+    background-color: white;
+    color: #475569;
+    border: 2px solid #e2e8f0;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-weight: 600;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.btn-login:hover {
+    border-color: #cbd5e1;
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+/* Sezione Icone in basso */
+.features-row {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #f1f5f9;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Dashboard */
+/* Centratura perfetta della testata */
+.fc-header-toolbar {
+    margin-bottom: 2rem !important;
+    display: flex;
+    justify-content: center !important;
+}
+
+.fc-toolbar-chunk {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Titolo in grassetto e più grande */
+.fc-toolbar-title {
+    font-size: 1.6rem !important;
+    font-weight: 800 !important;
+    text-transform: capitalize;
+    color: #1a202c;
+    min-width: 250px;
+    text-align: center;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+/* Stile per la barra di scorrimento */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f0f4f8;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Stile pulito per le freccette */
+.fc-button-primary {
+    background-color: transparent !important;
+    border: none !important;
+    color: #4a5568 !important;
+    font-size: 1.2rem !important;
+    box-shadow: none !important;
+}
+
+/* Effetto hover sulle freccette */
+.fc-button-primary:hover {
+    color: #0d6efd !important;
+}
+
+/* Rimuove l'ombra fastidiosa dei bottoni FullCalendar */
+.fc-button:focus {
+    box-shadow: none !important;
+}
+
+/* Cambia lo sfondo del giorno corrente nell'agenda */
+.fc .fc-day-today {
+    background-color: rgba(2, 132, 199, 0.1) !important;
+    border: 2px solid #0284c7 !important;
+}
+
+/* Cambia il colore del numero del giorno di oggi */
+.fc .fc-day-today .fc-col-header-cell-cushion,
+.fc .fc-day-today .fc-daygrid-day-number {
+    color: red !important;
+    font-weight: bold;
+}
+
+.fc .fc-scrollgrid {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* LAYOUT MOBILE */
+@media (max-width: 768px) {
+    
+    .table thead { display: none; }
+
+    /* CONTENITORE SCHEDA */
+    .table tbody tr {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 15px;
+        margin-bottom: 15px;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        background-color: white;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+    }
+
+    /* 1. Titolo a Sinistra */
+    .table tbody td:nth-child(1) {
+        order: 1;
+        flex: 1;
+        font-weight: 700;
+        color: #0284c7;
+        font-size: 1.05rem;
+        border: none;
+        padding: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-right: 10px;
+    }
+
+    /* 2. Data spostata affianco all'ora */
+    .table tbody td:nth-child(2) {
+        order: 2;
+        width: auto;
+        border: none;
+        padding: 0 5px;
+        font-size: 0.9rem;
+        color: #64748b;
+    }
+
+    /* 3. Ora tutta a destra */
+    .table tbody td:nth-child(3) {
+        order: 3;
+        width: auto;
+        border: none;
+        padding: 0 0 0 5px;
+        font-weight: 700;
+        color: #334155;
+        text-align: right;
+    }
+
+    /* Descrizione */
+    .table tbody td:nth-child(4) {
+        order: 4;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        color: #64748b;
+        font-size: 0.9rem;
+        border: none;
+        padding: 0;
+        line-height: 1.4;
+    }
+
+    /* 5. Pulsante STATO a Sinistra */
+    .table tbody td:nth-child(5) {
+        order: 5;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        border: none;
+        border-top: 1px solid #f1f5f9;
+        margin-top: 10px;
+        padding-top: 12px;
+    }
+
+    /* 6. Pulsanti MODIFICA/ELIMINA a Destra */
+    .table tbody td:last-child {
+        order: 6;
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 8px;
+        border: none;
+        border-top: 1px solid #f1f5f9;
+        margin-top: 10px;
+        padding-top: 12px;
+    }
+}
+
+/* Spazio delle freccette del mese */
+@media (max-width: 480px) {
+    
+    .fc-header-toolbar {
+        flex-direction: row !important;
+        justify-content: center !important;
+        gap: 5px !important;
+        flex-wrap: nowrap !important;
+    }
+
+    /* Rimpiccioliamo il titolo del mese per far spazio alle frecce */
+    .fc-toolbar-title {
+        font-size: 1.1rem !important;
+        min-width: auto !important;
+        margin: 0 10px !important;
+    }
+
+    /* Rendiamo i pulsanti delle frecce più piccoli */
+    .fc-button-primary {
+        padding: 4px 8px !important;
+        font-size: 1rem !important;
+    }
+
+    /* Contenitore delle freccette al centro */
+    .fc-toolbar-chunk {
+        display: flex !important;
+        align-items: center !important;
+    }
+}
